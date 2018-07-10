@@ -2,3 +2,13 @@ language: node_js
 node_js:
   - "iojs"
   - "7"
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: "AKIAJIV5EAO3SW3VU5RQ"
+  secret_access_key:
+    secure: "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"
+  region: "ap-southeast-1"  
+  app: "shopping-cart"
+  env: "shopping-cart-environment"
+  bucket_name: "shopping-cart"
